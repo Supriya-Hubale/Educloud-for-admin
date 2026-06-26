@@ -1,92 +1,12 @@
-# EduCloud: AI-Powered Educational Admin System
+# React + Vite
 
-EduCloud is a comprehensive school management platform built with the MERN stack. It leverages AI (Google Gemini) to automate and enhance various educational tasks, providing a seamless experience for administrators, teachers, students, and parents.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## 🚀 Key Features
+Currently, two official plugins are available:
 
-### 🏫 Administrative Portal
-*   **User Management**: Role-based access control for Admins, Teachers, Students, and Parents.
-*   **Smart Timetable Generator**: AI-assisted scheduling for classes and teachers.
-*   **Notification System**: Broadcast announcements and individual alerts.
-*   **System Oversight**: Comprehensive dashboard for school-wide analytics.
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-### 👨‍🏫 Teacher Module
-*   **AI Exam Generation**: Generate high-quality exam questions instantly using Google Gemini AI.
-*   **Attendance Tracking**: Digital registers to manage student attendance.
-*   **Result Management**: Input and analyze student performance data.
+## Expanding the ESLint configuration
 
-### 🎓 Student Portal
-*   **Interactive Exams**: Secure, timed examination environment with full-screen enforcement.
-*   **Auto-Timeout**: Automatic exam submission when the time limit is reached.
-*   **Result Tracking**: Detailed breakdown of performance with AI-powered recommendations.
-*   **EduBot**: An AI-powered chatbot to help with queries and learning.
-
-### 👪 Parent Portal
-*   **Child Monitoring**: Track child's attendance, results, and behavioral records.
-*   **Teacher Interaction**: Direct communication channel with educators.
-*   **Fee Management**: Overview of fee status and history.
-
-## 🛠 Tech Stack
-
-*   **Frontend**: React.js, Vite, Tailwind CSS, Lucide Icons, React Toastify.
-*   **Backend**: Node.js, Express.js.
-*   **Database**: MongoDB (Mongoose).
-*   **AI Integration**: Google Generative AI (Gemini).
-*   **Storage**: Cloudinary (for profile pictures).
-*   **Mailing**: Nodemailer (for password recovery).
-
-## 📋 Installation
-
-### 1. Clone the repository
-```bash
-git clone https://github.com/road2tec/Educloud-.git
-cd Educloud-
-```
-
-### 2. Backend Setup
-```bash
-cd backend
-npm install
-```
-Create a `.env` file in the `backend` directory:
-```env
-PORT=5000
-MONGODB_URI=your_mongodb_connection_string
-JWT_SECRET=your_jwt_secret
-GEMINI_API_KEY=your_gemini_api_key
-CLOUDINARY_CLOUD_NAME=your_cloudinary_name
-CLOUDINARY_API_KEY=your_cloudinary_key
-CLOUDINARY_API_SECRET=your_cloudinary_secret
-EMAIL_USER=your_gmail_address
-EMAIL_PASS=your_app_password
-CLIENT_URL=http://localhost:5173
-```
-
-### 3. Frontend Setup
-```bash
-cd ../frontend
-npm install
-```
-
-## 🏃‍♂️ Running the Application
-
-### Start Backend
-```bash
-cd backend
-npm run dev
-```
-
-### Start Frontend
-```bash
-cd frontend
-npm run dev
-```
-
-## 🔒 Security Features
-*   **JWT Authentication**: Secure user sessions.
-*   **Password Hashing**: Bcrypt for storing passwords safely.
-*   **Rate Limiting**: Protection against brute-force attacks.
-*   **Input Sanitization**: Prevention of XSS and injection attacks.
-
-## 📄 License
-This project is licensed under the ISC License.
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
